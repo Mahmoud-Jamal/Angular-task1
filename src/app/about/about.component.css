@@ -1,0 +1,26 @@
+.bg-lon{
+  background-color: #1ABC9C;
+}
+.star{
+  margin: auto;
+  width:350px ;
+  position: relative;
+}
+.star::before{
+  content: "";
+  background-color: white;
+  width: 80px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+}
+.star::after{
+  content: "";
+  background-color: white;
+  width: 80px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  right: 20%;
+}

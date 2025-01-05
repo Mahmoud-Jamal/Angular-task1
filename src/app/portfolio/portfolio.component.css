@@ -1,0 +1,43 @@
+.mt-10{
+  margin-top: 120px;
+}
+.star{
+  margin: auto;
+  width:350px ;
+  position: relative;
+}
+.star::before{
+  content: "";
+  background-color: rgb(0, 0, 0);
+  width: 80px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+}
+.star::after{
+  content: "";
+  background-color: rgb(0, 0, 0);
+  width: 80px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  right: 20%;
+}
+
+.layer{
+  display: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-color:#1ABC9C;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .6s;
+}
+.layer:hover{
+  opacity: .8;
+
+}

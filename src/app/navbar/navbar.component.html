@@ -1,0 +1,43 @@
+
+  <nav class="navbar navbar-expand-lg p1 bg-dark navbar-dark fixed-top" [class.p2]= padNav>
+    <div class="container">
+      <a class="navbar-brand fw-bolder fs-1" routerLink="home">Angular</a>
+      <div (click)="icon()" class="navbar-toggler p-0 me-2 border-0" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+        <div  class="toggle" [class.toggle-rot] ="checked">
+            <div class="bars bar1"[class] ="{
+              'bars1' : checked,
+              'bar-1' : checked
+            }" id="bar1"
+
+            ></div>
+            <div class="bars bar2" [class] ="{
+              'bars1' : checked,
+              'bar-2' : checked
+            }"></div>
+            <div class="bars bar3" [class] ="{
+              'bars1' : checked,
+              'bar-3' : checked
+            }"></div>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav mx-auto text-center">
+
+          <li class="nav-item ">
+            <a class="nav-link rounded-3 fw-bolder text-white" routerLink="home" routerLinkActive="bg-lon" >HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-3 fw-bolder text-white"routerLink="about"  routerLinkActive="bg-lon">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-3 fw-bolder text-white"routerLink="portfolio"  routerLinkActive="bg-lon">PORTFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-3 fw-bolder text-white"routerLink="contact"  routerLinkActive="bg-lon">CONTACT</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
