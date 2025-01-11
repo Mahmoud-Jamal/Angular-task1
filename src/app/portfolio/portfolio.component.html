@@ -23,7 +23,13 @@
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog ">
     <div class="modal-content">
-      <div class="modal-body p-0 ">
+      <div class="modal-body p-0 position-relative">
+        <div class="position-absolute top-50 start-0 end-0 bottom-0">
+          <div class=" d-flex justify-content-between">
+            <i class="fa-solid fa-circle-arrow-left fa-2x" (click)="prev()"></i>
+            <i class="fa-solid fa-circle-arrow-right fa-2x" (click)="next()"></i>
+          </div>
+        </div>
 <img [src]="image" alt="" width="100%">
 
       </div>
