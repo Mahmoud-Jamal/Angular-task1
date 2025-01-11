@@ -41,3 +41,7 @@
   opacity: .8;
 
 }
+.modal-dialog{
+  max-width: 600px;
+margin-top: 8%;
+}

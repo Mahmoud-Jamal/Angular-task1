@@ -4,61 +4,29 @@
 <div class="star py-3"><i class="fa-solid fa-star"></i></div>
 <div class="container">
   <div class="row g-5">
-    <div class="col-md-6 col-lg-4">
-      <div class="position-relative overflow-hidden rounded-3">
-        <img src="poert1.png" alt="" class="w-100">
-        <div class="layer d-flex align-items-center justify-content-center "><i class="fa-solid fa-plus text-white fa-8x"></i></div>
+    @for (item of images; track $index) {
+      <div class="col-md-6 col-lg-4">
+        <div class="position-relative overflow-hidden rounded-3">
+          <img [src]="item" alt="" class="w-100">
+          <div (click)="changeImag(item)" class="layer d-flex align-items-center justify-content-center " data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-plus text-white fa-8x"></i></div>
+        </div>
       </div>
-    </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="position-relative overflow-hidden rounded-3">
-        <img src="port2.png" alt="" class="w-100">
-        <div class="layer d-flex align-items-center justify-content-center"><i class="fa-solid fa-plus text-white fa-8x"></i></div>
-      </div>
-    </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="position-relative overflow-hidden rounded-3">
-        <img src="port3.png" alt="" class="w-100">
-        <div class="layer d-flex align-items-center justify-content-center"><i class="fa-solid fa-plus text-white fa-8x"></i></div>
-      </div>
-    </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="position-relative overflow-hidden rounded-3">
-        <img src="poert1.png" alt="" class="w-100">
-        <div class="layer d-flex align-items-center justify-content-center"><i class="fa-solid fa-plus text-white fa-8x"></i></div>
-      </div>
-    </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="position-relative overflow-hidden rounded-3">
-        <img src="port2.png" alt="" class="w-100">
-        <div class="layer d-flex align-items-center justify-content-center"><i class="fa-solid fa-plus text-white fa-8x"></i></div>
-      </div>
-    </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="position-relative overflow-hidden rounded-3">
-        <img src="port3.png" alt="" class="w-100">
-        <div class="layer d-flex align-items-center justify-content-center"><i class="fa-solid fa-plus text-white fa-8x"></i></div>
-      </div>
-    </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="position-relative overflow-hidden rounded-3">
-        <img src="poert1.png" alt="" class="w-100">
-        <div class="layer d-flex align-items-center justify-content-center"><i class="fa-solid fa-plus text-white fa-8x"></i></div>
-      </div>
-    </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="position-relative overflow-hidden rounded-3">
-        <img src="port2.png" alt="" class="w-100">
-        <div class="layer d-flex align-items-center justify-content-center"><i class="fa-solid fa-plus text-white fa-8x"></i></div>
-      </div>
-    </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="position-relative overflow-hidden rounded-3">
-        <img src="port3.png" alt="" class="w-100">
-        <div class="layer d-flex align-items-center justify-content-center"><i class="fa-solid fa-plus text-white fa-8x"></i></div>
+    }
+</div>
+</div>
+</div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-body p-0 ">
+<img [src]="image" alt="" width="100%">
+
       </div>
     </div>
   </div>
-</div>
-</div>
 </div>
